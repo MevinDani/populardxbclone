@@ -1,0 +1,111 @@
+.NavBarWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+
+    height: 50px;
+    padding: 8px;
+}
+
+.NavBarLogoCont {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBarLogoImg {
+    width: 200px;
+}
+
+.NavBarLinkCont {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavLinks {
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #999999;
+}
+
+.NavLinks:hover {
+    background-color: #f0f0f0;
+}
+
+.NavLinks.active {
+    background-color: #bc2026;
+    color: white;
+}
+
+.NavBarMobLinkCont {
+    display: none;
+}
+
+
+/* navBraMenu */
+
+.NavBarMenu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    top: 10px;
+    padding: 50px 0px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    z-index: 20;
+}
+
+.NavBarMenu>div {
+    color: black;
+}
+
+.NavBarMenuCloseCont {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 30px;
+}
+
+.NavBarMenuItemsCont {
+    padding: 50px;
+}
+
+.NavBarMenuItems {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width:960px) {
+    .NavBarLinkCont {
+        display: none;
+    }
+
+    .NavBarMobLinkCont {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:650px) {
+    .NavBarLogoImg {
+        width: 150px;
+    }
+
+    .NavBarLogoCont {
+        width: 35%;
+    }
+}

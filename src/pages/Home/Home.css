@@ -1,0 +1,10 @@
+.HomePageWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeBannerWrap {
+    display: flex;
+    flex-direction: column;
+}

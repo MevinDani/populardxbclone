@@ -1,0 +1,94 @@
+.MainBannerWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: url('../../../images/bannerBg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 580px;
+
+    background-color: #000000;
+    /* opacity: 0.95; */
+}
+
+.MainBannerLeftCont {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 12px;
+
+    gap: 50px;
+}
+
+.MainBannerRightCont {
+    width: 45%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.MainBannerSmallText {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.MainBannerBigText {
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+}
+
+.MainBannerBadgeWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.MainBannerBadgeCont {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 4px;
+    color: #bc2026;
+}
+
+.MainBannerBadgeCont:hover {
+    color: black;
+}
+
+/* animations */
+
+/* Define the initial and final state of the text */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+        /* Start from below the viewport */
+        opacity: 0;
+        /* Start invisible */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* End at its original position */
+        opacity: 1;
+        /* Become fully visible */
+    }
+}
+
+/* Add a class for the animated text */
+.animate-slide-up {
+    animation: slideUp 0.4s ease-out forwards;
+    /* Apply the animation */
+}
