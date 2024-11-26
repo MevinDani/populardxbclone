@@ -232,4 +232,8 @@
         flex: 0 1 calc(100% - 8px);
         /* 1 item per row */
     }
+
+    .ProductCategoryCont {
+        opacity: 1;
+    }
 }

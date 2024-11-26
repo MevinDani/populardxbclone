@@ -3,6 +3,7 @@ import './Home.css'
 import MainBanner from '../../components/Home/MainBanner/MainBanner'
 import ProductCategory from '../../components/Home/ProductCategory/ProductCategory'
 import LeadingBrands from '../../components/Home/Brands/LeadingBrands'
+import YearBanner from '../../components/Home/YearBanner/YearBanner'
 
 const Home = () => {
     return (
@@ -22,6 +23,12 @@ const Home = () => {
             <div>
                 <LeadingBrands />
             </div>
+
+            {/* YearBanner */}
+            <div>
+                <YearBanner />
+            </div>
+
         </div>
     )
 }

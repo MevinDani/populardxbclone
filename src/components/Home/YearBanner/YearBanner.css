@@ -1,0 +1,118 @@
+.YearBannerWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bc2026;
+    padding: 22px 0px;
+
+    height: 360PX;
+}
+
+.YearBannerLeftWrap {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+}
+
+.YearBannerLeftCont {
+    width: 80%;
+    background-color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    height: 280px;
+
+    position: relative;
+}
+
+.YearBannerLeftImg {
+    width: 100%;
+
+    object-fit: contain;
+
+    position: absolute;
+    bottom: -50px;
+}
+
+.YearBannerRightWrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    opacity: 0;
+}
+
+.YearBannerRightHeadText {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+
+    margin-bottom: 16px;
+}
+
+.YearBannerRightMidText {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.YearBannerGifCont {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 12px;
+}
+
+.YearBannerGifItem {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.YearBannerGif {
+    width: 50px;
+}
+
+.YearBannerGifText {
+    width: 100%;
+    flex-shrink: 16px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    .YearBannerWrap {
+        flex-direction: column;
+        height: max-content;
+        padding: 14px;
+    }
+
+    .YearBannerLeftWrap {
+        width: 100%;
+    }
+
+    .YearBannerRightWrap {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:440px) {
+    .YearBannerLeftImg {
+        bottom: 0px;
+    }
+}

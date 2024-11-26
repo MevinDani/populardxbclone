@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './LeadingBrands.css'
+import { useInView } from 'react-intersection-observer';
+
+
 
 const LeadingBrands = () => {
+
+    const [isLeadBrandVisible, setIsLeadBrandVisible] = useState(false);
+
+
+    const { ref: LeadBrandRef, inView: LeadBrandInView } = useInView({
+        triggerOnce: true,  // Trigger animation once when the element comes into view
+        threshold: 0.5,  // Trigger when 50% of the element is in view
+    });
+
+    useEffect(() => {
+        if (LeadBrandInView) {
+            setIsLeadBrandVisible(true)
+        }
+    }, [LeadBrandInView])
+
     return (
-        <div className='LeadingBrandsWrap'>
+        <div className='LeadingBrandsWrap' ref={LeadBrandRef}>
 
             <div className='LeadingBrandsHeaderText'>Leading Brands</div>
 
-            <div className='LeadingBrandsCont'>
+            <div className={`LeadingBrandsCont ${isLeadBrandVisible ? 'animate-from-left' : ''}`}>
 
                 <div className='LeadingBrandItemCont'>
 

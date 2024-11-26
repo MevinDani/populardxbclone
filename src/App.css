@@ -46,3 +46,48 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* animations */
+
+/* Slide-in animation when the element comes into view */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-30px);
+    /* Start from the left */
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(30px);
+    /* Start from the right */
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations when in view */
+.animate-from-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-from-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Optionally, for the whole section, if you want to animate everything */
+.animate-slide-in {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
