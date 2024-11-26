@@ -1,0 +1,113 @@
+.LeadingBrandsWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 22px 0px;
+}
+
+.LeadingBrandsHeaderText {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 12px 0px;
+}
+
+.LeadingBrandsCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+.LeadingBrandItemCont {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.LeadingBrand {
+    background-color: #ebe9e9;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    transition: 0.3s ease-in;
+
+    margin: 4px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.LeadingBrand:hover {
+    background-color: white;
+    /* transform: scale(1.1); */
+    box-shadow: 0 35px 100px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.logo1 {
+    background-image: url('../../../images/logo1.png');
+}
+
+.logo2 {
+    background-image: url('../../../images/logo2.png');
+}
+
+.logo3 {
+    background-image: url('../../../images/logo3.png');
+}
+
+.logo4 {
+    background-image: url('../../../images/logo4.png');
+}
+
+.logo5 {
+    background-image: url('../../../images/logo5.png');
+}
+
+.logo6 {
+    background-image: url('../../../images/logo6.png');
+}
+
+.logo7 {
+    background-image: url('../../../images/logo7.png');
+}
+
+.logo8 {
+    background-image: url('../../../images/logo8.png');
+}
+
+.logo9 {
+    background-image: url('../../../images/logo9.png');
+}
+
+.logo10 {
+    background-image: url('../../../images/logo10.png');
+}
+
+.logo11 {
+    background-image: url('../../../images/logo11.png');
+}
+
+.logo12 {
+    background-image: url('../../../images/logo12.png');
+}
+
+.logo13 {
+    background-image: url('../../../images/logo13.png');
+}
+
+.logo14 {
+    background-image: url('../../../images/logo14.png');
+}
+
+.logo15 {
+    background-image: url('../../../images/logo15.png');
+}
