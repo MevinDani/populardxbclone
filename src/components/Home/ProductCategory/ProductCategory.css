@@ -224,6 +224,11 @@
         flex: 0 1 calc(50% - 8px);
         /* 2 items per row */
     }
+
+
+    .ProductCategoryCont {
+        opacity: 1;
+    }
 }
 
 /* Responsive design for very small screens */

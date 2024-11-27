@@ -3,7 +3,6 @@ import './ProductCategory.css'
 import { useInView } from 'react-intersection-observer';
 
 
-
 const ProductCategory = () => {
 
     const [isProdCatVisible, setIsProdCatVisible] = useState(false);

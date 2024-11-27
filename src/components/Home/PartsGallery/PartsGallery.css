@@ -1,0 +1,231 @@
+.PartsGalleryWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bc2026;
+    padding: 22px 0px;
+
+    min-height: 360px;
+    max-height: max-content;
+}
+
+.PartsGalleryButtonWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.PartsGalleryButtonCont {
+    width: 85%;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.PartsGalleryButton {
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.PartsGridWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PartsGridCont {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    padding: 12px 0px;
+}
+
+.PartsGridItem {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.PartsGridItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+/* Blue circle */
+.PartsGridItem .hover-circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    /* Blue background */
+    border-radius: 50%;
+    pointer-events: none;
+    /* Ensure the circle doesn't interfere with hover detection */
+    opacity: 0;
+    /* Hidden initially */
+    transform: translate(-50%, -50%) scale(0.5);
+    /* Center and shrink */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Show the circle when hovering */
+.PartsGridItem:hover .hover-circle {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.PartsGridImg {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.PartsDescCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cccccc;
+}
+
+.PartsDescCategory,
+.PartsDescName {
+    padding: 6px;
+}
+
+.PartsDescCategory {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.PartsDescName {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.LoadMoreButtonWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.LoadMoreButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #bc2026;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 0.5px solid white;
+}
+
+.LoadMoreButton:hover {
+    background-color: white;
+    color: #bc2026;
+}
+
+.FilterButton {
+    display: none;
+}
+
+/* popUp */
+
+/* Full-screen popup styles */
+.PartsPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure it overlays everything */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show popup */
+.PartsPopup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Image inside popup */
+.PartsPopup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Close button */
+.PartsPopupClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.PartsPopupClose:hover {
+    transform: scale(1.1);
+}
+
+
+.PartsGridWrap {
+    opacity: 0;
+}
+
+@media (max-width:800px) {
+    .PartsGalleryButtonCont {
+        width: 95%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .FilterButton {
+        display: block;
+    }
+}

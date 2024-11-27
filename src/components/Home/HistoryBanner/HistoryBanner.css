@@ -1,0 +1,87 @@
+.HistoryBannerWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 22px 0px;
+
+    height: 360PX;
+}
+
+.HistoryBannerLeftWrap {
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HistoryBannerLeftCont {
+    width: 95%;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+    line-height: 1.2;
+}
+
+.HistoryBannerRightWrap {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HistoryBannerRightCont {
+    width: 95%;
+    font-size: 22px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.5;
+}
+
+@media (max-width:1130px) {
+
+    .HistoryBannerLeftWrap,
+    .HistoryBannerRightWrap {
+        width: 50%;
+    }
+
+    .HistoryBannerRightCont {
+        font-size: 20px;
+    }
+
+    .HistoryBannerLeftCont {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:960px) {
+    .HistoryBannerWrap {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .HistoryBannerLeftWrap,
+    .HistoryBannerRightWrap {
+        width: 100%;
+    }
+
+    .HistoryBannerLeftCont,
+    .HistoryBannerRightCont {
+        text-align: center;
+    }
+
+    .HistoryBannerLeftCont {
+        padding: 16px 0px;
+    }
+}
+
+@media (max-width:460px) {
+    .HistoryBannerLeftCont {
+        font-size: 28px;
+    }
+
+    .HistoryBannerRightCont {
+        font-size: 16px;
+    }
+}
