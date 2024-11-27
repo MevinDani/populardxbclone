@@ -3,7 +3,7 @@ import './ProductCategory.css'
 import { useInView } from 'react-intersection-observer';
 
 
-const ProductCategory = () => {
+const ProductCategory = ({ page }) => {
 
     const [isProdCatVisible, setIsProdCatVisible] = useState(false);
 
@@ -39,11 +39,19 @@ const ProductCategory = () => {
         }
     }, [prodCatInView])
 
+    console.log('page', page)
+
 
     return (
-        <div className='ProductCategoryWrap' ref={prodCatRef}>
+        <div className='ProductCategoryWrap' ref={prodCatRef}
+            style={{
+                backgroundColor: page ? '#f7f7f7' : '#bc2026',
+            }}
+        >
 
-            <div className='ProductCategoyHeaderText'>Product Categories</div>
+            <div className='ProductCategoyHeaderText' style={{
+                color: page ? 'black' : 'white',
+            }}>Product Categories</div>
 
             <div className={`ProductCategoryCont ${isProdCatVisible ? 'animate-slide-up' : ''}`}>
 

@@ -1,0 +1,91 @@
+.VisionWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 500px;
+}
+
+.VisionRightCont {
+    width: 50%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    height: 500px;
+
+    opacity: 0;
+}
+
+.VisionLeftCont {
+    width: 50%;
+    height: 500px;
+
+    background-image: url('../../../images/OurVisionImg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0;
+}
+
+.VisionRightHeadText {
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+
+    margin-bottom: 16px;
+}
+
+.VisionRightMidText {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+@media (max-width:1002px) {
+    .VisionRightCont {
+        width: 70%;
+    }
+}
+
+@media (max-width:860px) {
+    .VisionWrap {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .VisionLeftCont {
+        width: 100%;
+        height: 400px;
+
+
+    }
+
+    .VisionRightCont {
+        width: 100%;
+        height: max-content;
+    }
+}
+
+@media (max-width:460px) {
+
+    .YearBannerRightHeadText,
+    .YearBannerRightMidText {
+        padding: 8px 16px;
+    }
+
+    .VisionRightCont {
+        padding-bottom: 18px;
+        gap: 8px;
+    }
+
+    .VisionRightMidText {
+        padding: 0px 14px;
+        font-size: 16px;
+    }
+}

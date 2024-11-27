@@ -1,0 +1,33 @@
+.AboutMainBannerWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.AboutMainBannerCont {
+    width: 95%;
+    background-color: #bc2026;
+    padding: 30px 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    opacity: 0;
+}
+
+.AboutMainBannerHeadText {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+.AboutMainBannerDescText {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}

@@ -25,11 +25,11 @@ const NavBar = () => {
 
                 <div className='NavBarLinkCont'>
 
-                    <div className={`NavLinks  ${location.pathname === "/" ? "active" : ""}`}>Home</div>
-                    <div className={`NavLinks  ${location.pathname === "/about" ? "active" : ""}`}>About</div>
-                    <div className={`NavLinks  ${location.pathname === "/products" ? "active" : ""}`}>Products</div>
-                    <div className={`NavLinks  ${location.pathname === "/team" ? "active" : ""}`}>Our Team</div>
-                    <div className={`NavLinks  ${location.pathname === "/contact" ? "active" : ""}`}>Contact</div>
+                    <div className={`NavLinks  ${location.pathname === "/" ? "active" : ""}`} onClick={() => navigate('/')}>Home</div>
+                    <div className={`NavLinks  ${location.pathname === "/about" ? "active" : ""}`} onClick={() => navigate('/about')}>About</div>
+                    <div className={`NavLinks  ${location.pathname === "/products" ? "active" : ""}`} onClick={() => navigate('/products')}>Products</div>
+                    <div className={`NavLinks  ${location.pathname === "/team" ? "active" : ""}`} onClick={() => navigate('/team')}>Our Team</div>
+                    <div className={`NavLinks  ${location.pathname === "/contact" ? "active" : ""}`} onClick={() => navigate('/contact')}>Contact</div>
                     {/* <div>Home</div> */}
                 </div>
 
@@ -37,7 +37,10 @@ const NavBar = () => {
 
                 <div className='NavBarMobLinkCont'>
 
-                    <div className={`NavLinks  ${location.pathname === "/contact" ? "active" : ""}`}>Contact</div>
+                    <div className={`NavLinks  ${location.pathname === "/contact" ? "active" : ""}`}
+                        onClick={() => navigate('/contact')}>
+                        Contact
+                    </div>
 
                     <div onClick={() => setShowNavMenu(!showNavMenu)}>
                         <VscListFlat />
@@ -72,8 +75,18 @@ const NavBar = () => {
                         }}>
                             About
                         </div>
-                        <div className='NavBarMenuItems'>Products</div>
-                        <div className='NavBarMenuItems'>Our Team</div>
+                        <div className='NavBarMenuItems' onClick={() => {
+                            navigate('/products')
+                            setShowNavMenu(false)
+                        }}>
+                            Products
+                        </div>
+                        <div className='NavBarMenuItems' onClick={() => {
+                            navigate('/team')
+                            setShowNavMenu(false)
+                        }}>
+                            Our Team
+                        </div>
                     </div>
 
                 </div>

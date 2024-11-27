@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './Home.css'
 import MainBanner from '../../components/Home/MainBanner/MainBanner'
 import ProductCategory from '../../components/Home/ProductCategory/ProductCategory'
@@ -10,6 +10,7 @@ import HomeCarousel from '../../components/Home/HomeCarousel/HomeCarousel'
 import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
+
     return (
         <div className='HomePageWrap'>
 

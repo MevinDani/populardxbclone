@@ -1,0 +1,142 @@
+.ExtensiveRangeWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ExtensiveRangeCont {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    background-image: url('../../../images/AboutExtRangeImg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    height: 500px;
+    border-radius: 12px;
+
+    opacity: 0;
+}
+
+
+.ExtensiveRangeCont::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    /* Semi-transparent black overlay */
+    z-index: 1;
+    /* Places it beneath the text */
+    /* Slightly darken the overlay on hover */
+}
+
+.ExtRangeLeftCont {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 26px;
+
+    padding-left: 30px;
+
+}
+
+.ExtRangeLeftCont,
+.ExtRangeRightCont {
+    z-index: 2;
+}
+
+
+
+.ExtRangeLeftHeadText {
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+}
+
+.ExtRangeLeftDescText {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.ExtRangeLeftQualityCont {
+    /* width: 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.ExtRangeLeftQItem {
+    padding: 12px;
+    background-color: #bc2026;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ExtRangeRightCont {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ExtRangeRightImg {
+    width: 90%;
+    object-fit: cover;
+}
+
+.ExtRangeDiamond {
+    color: #bc2026;
+    font-size: 48px;
+}
+
+@media (max-width:860px) {
+    .ExtensiveRangeCont {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .ExtRangeLeftCont {
+        padding-top: 18px;
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .ExtRangeRightCont {
+        width: 100%;
+    }
+
+    .ExtRangeRightImg {
+        width: 70%;
+    }
+}
+
+@media (max-width:510px) {
+    .ExtRangeLeftCont {
+        width: 85%;
+        padding-left: 0px;
+    }
+
+    .ExtRangeLeftQualityCont {
+        flex-wrap: wrap;
+    }
+
+    .ExtRangeRightImg {
+        width: 80%;
+    }
+}

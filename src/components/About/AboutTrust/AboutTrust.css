@@ -1,0 +1,71 @@
+.AboutTrustWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    margin-top: 44px;
+    height: 500px;
+}
+
+.AboutTrustRightCont {
+    width: 50%;
+    background-color: #bc2026;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.AboutTrustLeftCont {
+    width: 50%;
+    height: 500px;
+
+    background-image: url('../../../images/AboutTrustImg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.AboutTrustImg {
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width:1002px) {
+    .AboutTrustRightCont {
+        width: 70%;
+    }
+}
+
+@media (max-width:860px) {
+    .AboutTrustWrap {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .AboutTrustLeftCont {
+        width: 100%;
+        height: 400px;
+
+
+    }
+
+    .AboutTrustRightCont {
+        width: 100%;
+        height: max-content;
+    }
+}
+
+@media (max-width:460px) {
+
+    .YearBannerRightHeadText,
+    .YearBannerRightMidText {
+        padding: 8px 16px;
+    }
+
+    .AboutTrustRightCont {
+        padding-bottom: 18px;
+    }
+}

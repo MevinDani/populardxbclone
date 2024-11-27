@@ -1,0 +1,93 @@
+.MissionWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    margin-top: 44px;
+    height: 500px;
+}
+
+.MissionRightCont {
+    width: 50%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    height: 500px;
+
+    opacity: 0;
+}
+
+.MissionLeftCont {
+    width: 50%;
+    height: 500px;
+
+    background-image: url('../../../images/OurMssionImg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0;
+}
+
+.MissionRightHeadText {
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+
+    margin-bottom: 16px;
+}
+
+.MissionRightMidText {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+@media (max-width:1002px) {
+    .MissionRightCont {
+        width: 70%;
+    }
+}
+
+@media (max-width:860px) {
+    .MissionWrap {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .MissionLeftCont {
+        width: 100%;
+        height: 400px;
+
+
+    }
+
+    .MissionRightCont {
+        width: 100%;
+        height: max-content;
+    }
+}
+
+@media (max-width:460px) {
+
+    .YearBannerRightHeadText,
+    .YearBannerRightMidText {
+        padding: 8px 16px;
+    }
+
+    .MissionRightCont {
+        padding-bottom: 18px;
+        gap: 8px;
+    }
+
+    .MissionRightMidText {
+        padding: 0px 14px;
+        font-size: 16px;
+    }
+}

@@ -39,6 +39,10 @@
     line-height: 1.5;
 }
 
+.AboutEnhanceRightText {
+    font-size: 20px;
+}
+
 @media (max-width:1130px) {
 
     .HistoryBannerLeftWrap,
