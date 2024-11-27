@@ -1,0 +1,94 @@
+.FooterWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bc2026;
+    padding: 36px 50px;
+
+    height: max-content;
+}
+
+.FooterTopCont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+
+    padding-bottom: 16px;
+
+    border-bottom: 0.5px solid grey;
+}
+
+.FooterLeftCont {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.FooterRightCont {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.FooterContHeadText {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.FooterContDescText {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.FooterAddressCont {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.FooterAddressIcon {
+    color: white;
+    font-size: 28px;
+}
+
+.FooterBottomCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+@media (max-width:860px) {
+
+    .FooterLeftCont,
+    .FooterRightCont {
+        width: 50%;
+    }
+}
+
+@media (max-width:760px) {
+    .FooterTopCont {
+        flex-direction: column;
+    }
+
+    .FooterLeftCont,
+    .FooterRightCont {
+        width: 100%;
+    }
+}
+
+@media (max-width:460px) {
+    .FooterWrap {
+        padding: 30px;
+    }
+}

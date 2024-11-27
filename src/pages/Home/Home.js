@@ -6,6 +6,8 @@ import LeadingBrands from '../../components/Home/Brands/LeadingBrands'
 import YearBanner from '../../components/Home/YearBanner/YearBanner'
 import HistoryBanner from '../../components/Home/HistoryBanner/HistoryBanner'
 import PartsGallery from '../../components/Home/PartsGallery/PartsGallery'
+import HomeCarousel from '../../components/Home/HomeCarousel/HomeCarousel'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
     return (
@@ -39,6 +41,16 @@ const Home = () => {
             {/* PartsGallery */}
             <div>
                 <PartsGallery />
+            </div>
+
+            {/* HomeCarousel */}
+            <div style={{ padding: '10px 0px' }}>
+                <HomeCarousel />
+            </div>
+
+            {/* Footer */}
+            <div>
+                <Footer />
             </div>
 
         </div>
