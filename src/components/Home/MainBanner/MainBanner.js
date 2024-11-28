@@ -56,10 +56,10 @@ const MainBanner = () => {
                             width="550"
                             height="450"
                             preload="auto"
-                            loop=""
-                            autoPlay=""
-                            muted=""
-                            playsinline=""
+                            loop
+                            autoPlay
+                            muted
+                            playsInline
                             style={{ visibility: 'visible', borderRadius: 12 }}
                         >
                             {/* <source src="https://populardxb.com/wp-content/uploads/2024/10/Popular-1.mp4" type="video/mp4" /> */}

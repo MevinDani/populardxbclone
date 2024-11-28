@@ -45,6 +45,7 @@
 .MainBannerRightCont {
     width: 45%;
     z-index: 5;
+    height: 500px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
