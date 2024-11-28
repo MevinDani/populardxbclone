@@ -42,6 +42,7 @@ const Vision = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+    
     useEffect(() => {
         if (VisionInView) {
             setIsVisionVisible(true)

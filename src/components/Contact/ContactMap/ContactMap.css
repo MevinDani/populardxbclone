@@ -1,0 +1,14 @@
+.ContactMapWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactMapCont {
+    height: 400px;
+    width: 90%;
+    border-radius: 12px;
+    overflow: hidden;
+
+    opacity: 0;
+}

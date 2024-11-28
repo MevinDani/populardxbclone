@@ -123,19 +123,23 @@
 /* Add a class for the animated text */
 .animate-slide-up {
   animation: slideUp 0.4s ease-out forwards;
+  opacity: 1 !important;
   /* Apply the animation */
 }
 
 /* Apply animations when in view */
 .animate-from-left {
   animation: slideInLeft 0.8s ease-out forwards;
+  opacity: 1 !important;
 }
 
 .animate-from-right {
   animation: slideInRight 0.8s ease-out forwards;
+  opacity: 1 !important;
 }
 
 /* Optionally, for the whole section, if you want to animate everything */
 .animate-slide-in {
   animation: slideInLeft 0.8s ease-out forwards;
+  opacity: 1 !important;
 }

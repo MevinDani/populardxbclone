@@ -1,0 +1,29 @@
+.ContactBranchWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 36px;
+    gap: 26px;
+}
+
+.ContactBranchLeftCot {
+    border-radius: 12px;
+    background-color: #ededed;
+    height: auto;
+    padding: 30px;
+    width: 40%;
+
+    opacity: 0;
+}
+
+@media (max-width:860px) {
+    .ContactBranchWrap {
+        flex-direction: column;
+    }
+
+    .ContactBranchLeftCot {
+        width: 85%;
+        height: 300px;
+        justify-content: center;
+    }
+}

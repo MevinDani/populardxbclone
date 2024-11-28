@@ -39,7 +39,7 @@ const ProductCategory = ({ page }) => {
         }
     }, [prodCatInView])
 
-    console.log('page', page)
+    // console.log('page', page)
 
 
     return (

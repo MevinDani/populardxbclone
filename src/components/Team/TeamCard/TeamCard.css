@@ -1,0 +1,202 @@
+.TeamCardWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    min-height: 500px;
+
+    max-height: fit-content;
+}
+
+.TeamCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 16%; */
+    width: 200px;
+    cursor: pointer;
+
+    margin: 16px;
+
+    height: 370px;
+
+    overflow: hidden;
+    /* Ensures no overflow when scaling */
+    transition: transform 0.3s ease-in-out;
+}
+
+.TeamCardImgCont {
+    transition: transform 0.3s ease-in-out;
+}
+
+.TeamCardImg {
+    width: 100%;
+
+    /* height: 400px; */
+
+    /* object-fit: cover; */
+
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure the image container scales down */
+.TeamCardImgCont {
+    overflow: hidden;
+    /* Prevents the image from overflowing the container */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth scaling for the container */
+}
+
+/* Smooth transition for the image */
+.TeamCardImg {
+    transition: transform 0.3s ease-in-out;
+    /* Smooth scaling for the image */
+}
+
+/* On hover, scale the container down */
+.TeamCard:hover .TeamCardImgCont {
+    transform: scale(0.95);
+    /* Scales the container down slightly */
+}
+
+/* On hover, scale the image up */
+.TeamCard:hover .TeamCardImg {
+    transform: scale(1.2);
+    /* Scales the image up slightly */
+}
+
+
+.TeamCardPositionText {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+
+    margin: 8px 0px;
+}
+
+.TeamCardNameText {
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    margin: 8px 0px;
+
+}
+
+
+/* Popup Screen Styles */
+.PopupScreen {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Start off-screen */
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+    /* Smooth slide-in effect */
+    z-index: 1000;
+    /* Ensure it appears above everything */
+}
+
+.PopupScreen.visible {
+    right: 0;
+    /* Slide in from the right */
+}
+
+.CloseButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    color: black;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.PopupContentContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.PopupCloseCursor {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    /* Make it non-clickable */
+    transform: translate(-50%, -50%);
+    z-index: 1100;
+}
+
+.PopupContentContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Left Container */
+.PopupLeft {
+    width: 50%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.PopupImage {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.PopupName {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.PopupPosition {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #777;
+}
+
+/* Right Container */
+.PopupRight {
+    width: 50%;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:640px) {
+    .PopupRight {
+        display: none;
+    }
+
+    .PopupLeft {
+        width: 100%;
+    }
+}

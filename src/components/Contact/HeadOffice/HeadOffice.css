@@ -1,0 +1,112 @@
+.HeadOfficeWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 500px;
+    max-height: fit-content;
+}
+
+.HeadOfficeCont {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 18px; */
+    border-radius: 12px;
+    background-color: #ededed;
+}
+
+.HeadOfficeLeftCont {
+    width: 45%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+
+.HeadOfficeHeadText {
+    font-size: 26px;
+    color: black;
+    font-weight: 600;
+}
+
+.HeadOfficeAddressCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.HeadOfficeAddressCont>p {
+    margin: 6px 0px;
+}
+
+.HeadOfficeCompanyText {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.HeadOfficeAddressText {
+    font-size: 20px;
+}
+
+.HeadOfficeMapLink {
+    color: #808080;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.HeadOfficeMapLink:hover {
+    color: #525252;
+}
+
+.HeadOfficeMapLink {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.HeadOfficeRightCont {
+
+    overflow: hidden;
+
+    width: 50%;
+    padding-right: 12px;
+
+}
+
+.HeadOfficeRightImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.HeadOfficeLeftImg {
+    width: 25px;
+}
+
+.ConnectDataCont {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (max-width:980px) {
+    .HeadOfficeLeftCont {
+        gap: 10px;
+    }
+}
+
+@media (max-width:764px) {
+    .HeadOfficeCont {
+        flex-direction: column;
+    }
+
+    .HeadOfficeLeftCont {
+        width: 80%;
+    }
+
+    .HeadOfficeRightCont {
+        width: 85%;
+    }
+}
