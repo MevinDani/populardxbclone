@@ -199,4 +199,8 @@
     .PopupLeft {
         width: 100%;
     }
+
+    .PopupCloseCursor {
+        display: none
+    }
 }
