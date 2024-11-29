@@ -37,10 +37,10 @@ const NavBar = () => {
 
                 <div className='NavBarMobLinkCont'>
 
-                    <div className={`NavLinks  ${location.pathname === "/contact" ? "active" : ""}`}
+                    {/* <div className={`NavLinks  ${location.pathname === "/contact" ? "active" : ""}`}
                         onClick={() => navigate('/contact')}>
                         Contact
-                    </div>
+                    </div> */}
 
                     <div onClick={() => setShowNavMenu(!showNavMenu)}>
                         <VscListFlat />
@@ -86,6 +86,12 @@ const NavBar = () => {
                             setShowNavMenu(false)
                         }}>
                             Our Team
+                        </div>
+                        <div className='NavBarMenuItems' onClick={() => {
+                            navigate('/contact')
+                            setShowNavMenu(false)
+                        }}>
+                            Contacts
                         </div>
                     </div>
 
