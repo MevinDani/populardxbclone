@@ -3,8 +3,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #bc2026;
-    padding: 22px 0px;
+    /* background-color: #bc2026; */
+    background-color: var(--main-color);
+    padding: 40px 0px;
 
     height: 360px;
 }
@@ -20,7 +21,7 @@
 
 .YearBannerLeftCont {
     width: 80%;
-    background-color: white;
+    /* background-color: white; */
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 
@@ -30,12 +31,12 @@
 }
 
 .YearBannerLeftImg {
-    width: 100%;
+    width: 70%;
 
-    object-fit: contain;
+    object-fit: cover;
 
-    position: absolute;
-    bottom: -50px;
+    /* position: absolute;
+    bottom: -50px; */
 }
 
 .YearBannerRightWrap {

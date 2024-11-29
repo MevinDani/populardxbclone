@@ -49,7 +49,7 @@ const MainBanner = () => {
 
                 </div>
 
-                <div class="MainBannerRightCont">
+                {/* <div class="MainBannerRightCont">
 
                     <div style={{ borderRadius: '12px' }}>
                         <video
@@ -62,12 +62,11 @@ const MainBanner = () => {
                             playsInline
                             style={{ visibility: 'visible', borderRadius: 12 }}
                         >
-                            {/* <source src="https://populardxb.com/wp-content/uploads/2024/10/Popular-1.mp4" type="video/mp4" /> */}
                             <source src='/videos/bannerVideo.mp4' type="video/mp4" />
                         </video>
                     </div>
 
-                </div>
+                </div> */}
 
 
                 <div
@@ -81,7 +80,7 @@ const MainBanner = () => {
                     <svg
                         className="nectar-shape-divider"
                         aria-hidden="true"
-                        fill="#bc2026"
+                        fill="#0077b6"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 100 10"
                         preserveAspectRatio="none"

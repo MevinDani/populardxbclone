@@ -8,6 +8,7 @@ import HistoryBanner from '../../components/Home/HistoryBanner/HistoryBanner'
 import PartsGallery from '../../components/Home/PartsGallery/PartsGallery'
 import HomeCarousel from '../../components/Home/HomeCarousel/HomeCarousel'
 import Footer from '../../components/Footer/Footer'
+import MainBrands from '../../components/Home/MainBrands/MainBrands';
 
 const Home = () => {
 
@@ -37,6 +38,11 @@ const Home = () => {
             {/* HistoryBanner */}
             <div>
                 <HistoryBanner />
+            </div>
+
+            {/* MainBrands */}
+            <div>
+                <MainBrands />
             </div>
 
             {/* PartsGallery */}

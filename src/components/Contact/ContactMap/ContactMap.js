@@ -30,7 +30,8 @@ const ContactMap = () => {
     }, [MapInView])
 
     // Coordinates for the location (latitude, longitude)
-    const position = [25.270271, 55.310121];
+    const position = [25.2711599, 55.3108874];
+
 
     return (
         <div className='ContactMapWrap' ref={MapRef}>
@@ -50,7 +51,7 @@ const ContactMap = () => {
                     {/* Marker: Add a pin on the map */}
                     <Marker position={position} icon={customIcon}>
                         <Popup>
-                            Popular Auto Spare Parts Trading LLC <br /> Dubai, UAE
+                            Honour Auto Spare Parts Trading LLC <br /> Dubai, UAE
                         </Popup>
                     </Marker>
                 </MapContainer>

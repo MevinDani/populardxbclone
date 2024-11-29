@@ -4,7 +4,8 @@ import './YearBanner.css'
 import Gif1 from '../../../images/YearBanner1.gif'
 import Gif2 from '../../../images/YearBanner22.gif'
 import Gif3 from '../../../images/YearBanner3.gif'
-import YearBannerLeft from '../../../images/yearBannerLeft.png'
+// import YearBannerLeft from '../../../images/yearBannerLeft.png'
+import YearBannerLeft from '../../../images/HomeYearImg.jpeg'
 
 const YearBanner = () => {
 
@@ -25,10 +26,12 @@ const YearBanner = () => {
         <div className='YearBannerWrap' ref={YearBannerRef}>
 
             <div className={`YearBannerLeftWrap ${isYearBannerVisible ? 'animate-from-left' : ''}`}>
-                <div className='YearBannerLeftCont'>
+
+                <img className='YearBannerLeftImg' src={YearBannerLeft} alt="" />
+                {/* <div className='YearBannerLeftCont'>
 
                     <img className='YearBannerLeftImg' src={YearBannerLeft} alt="" />
-                </div>
+                </div> */}
             </div>
 
             <div className={`YearBannerRightWrap ${isYearBannerVisible ? 'animate-from-right' : ''}`}>

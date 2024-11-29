@@ -1,0 +1,63 @@
+.AboutEnhanceWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 22px 0px;
+
+    height: 360px;
+
+}
+
+.AboutEnhanceLeft,
+.AboutEnhanceRightText {
+    color: black;
+}
+
+@media (max-width:1130px) {
+
+    .HistoryBannerLeftWrap,
+    .HistoryBannerRightWrap {
+        width: 50%;
+    }
+
+    .HistoryBannerRightCont {
+        font-size: 20px;
+    }
+
+    .HistoryBannerLeftCont {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:960px) {
+    .AboutEnhanceWrap {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .HistoryBannerLeftWrap,
+    .HistoryBannerRightWrap {
+        width: 100%;
+    }
+
+    .HistoryBannerLeftCont,
+    .HistoryBannerRightCont {
+        text-align: center;
+    }
+
+    .HistoryBannerLeftCont {
+        padding: 16px 0px;
+    }
+}
+
+@media (max-width:460px) {
+    .HistoryBannerLeftCont {
+        font-size: 28px;
+    }
+
+    .HistoryBannerRightCont {
+        font-size: 15px;
+    }
+}

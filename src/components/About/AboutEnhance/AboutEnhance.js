@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer';
+import './AboutEnhance.css'
 
 const AboutEnhance = () => {
 
@@ -17,11 +18,11 @@ const AboutEnhance = () => {
     }, [HistoryBannerInView])
 
     return (
-        <div className='HistoryBannerWrap' ref={HistoryBannerRef}>
+        <div className='AboutEnhanceWrap' ref={HistoryBannerRef}>
 
             <div className={`HistoryBannerLeftWrap ${isHistoryBannerVisible ? 'animate-slide-up' : ''}`}>
 
-                <div className='HistoryBannerLeftCont'>
+                <div className='HistoryBannerLeftCont AboutEnhanceLeft'>
                     Enhance your vehicle <br />
                     performance with trusted <br />
                     high-quality spare parts.

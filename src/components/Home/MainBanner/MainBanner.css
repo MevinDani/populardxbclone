@@ -4,7 +4,9 @@
     align-items: center;
     justify-content: space-between;
 
-    background-image: url('../../../images/bannerBg.webp');
+    /* background-image: url('../../../images/bannerBg.webp'); */
+    background-image: url('../../../images/FaithHomeBanner.jpeg');
+    /* background-image: url('../../../images/HomeBanner2.jpeg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

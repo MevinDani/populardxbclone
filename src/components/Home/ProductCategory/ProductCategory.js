@@ -45,7 +45,7 @@ const ProductCategory = ({ page }) => {
     return (
         <div className='ProductCategoryWrap' ref={prodCatRef}
             style={{
-                backgroundColor: page ? '#f7f7f7' : '#bc2026',
+                backgroundColor: page ? '#f7f7f7' : '#0077b6',
             }}
         >
 

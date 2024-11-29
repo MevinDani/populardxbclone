@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
 
                     <div className='FooterContDescText'>
-                        For over two decades, Popular Auto Spare <br />
+                        For over two decades, Honour Auto Spare <br />
                         Parts have delivered exceptional quality and <br />
                         reliability, earning trust globally for our <br />
                         extensive range of spare parts <br />
@@ -33,8 +33,9 @@ const Footer = () => {
                     <div className='FooterAddressCont'>
                         <CiLocationOn className='FooterAddressIcon' />
                         <div className='FooterContDescText'>
-                            Popular Auto Spart Parts Trading L.L.C, <br />
-                            Near Mark Inn Hotel, Baniyas Square, <br />
+                            Honour Auto Spart Parts Trading L.L.C, <br />
+                            Shop No:5, Rimal NAF 365 Building, <br />
+                            Behind Deira Park Hotel, <br />
                             Deira, Dubai United Arab Emirates
                         </div>
                     </div>
@@ -47,7 +48,7 @@ const Footer = () => {
                     <div className='FooterAddressCont'>
                         <FiPhone className='FooterAddressIcon' />
                         <div className='FooterContDescText'>
-                            +971 4 221 6100
+                            +971 55 860 6530
                         </div>
                     </div>
                 </div>
@@ -56,7 +57,7 @@ const Footer = () => {
             <div className='FooterBottomCont'>
 
                 <div className='FooterContDescText'>
-                    All Rights Reserved | Popular Auto Spare Parts 2024
+                    All Rights Reserved | Honour Auto Spare Parts 2024
                 </div>
             </div>
         </div>

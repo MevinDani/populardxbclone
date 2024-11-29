@@ -1,0 +1,15 @@
+.MainBrandsWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hwb(358 13% 26%); */
+    background-color: var(--main-color);
+
+    padding: 24px 0px;
+}
+
+.MainBrandsCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

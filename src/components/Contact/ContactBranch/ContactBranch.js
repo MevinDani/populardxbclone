@@ -18,14 +18,14 @@ const ContactBranch = () => {
 
     const handleMapLink1Click = () => {
         window.open(
-            'https://www.google.com/maps/place/Popular+Auto+Spare+Parts+Trading+L.L.C-Branch+1/@25.2703368,55.2702172,14z/data=!4m6!3m5!1s0x3e5f43663767e067:0xedd2c83e93dfc36e!8m2!3d25.2706614!4d55.3093526!16s%2Fg%2F11v3nq4jt7?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D',
+            'https://www.google.com/maps/place/Honour+Auto+Spare+Parts+Trading+Llc/@25.2711599,55.3108874,15z/data=!4m6!3m5!1s0x3e5f43fdd35810ab:0x1fc81395db33dd4d!8m2!3d25.2711599!4d55.3108874!16s%2Fg%2F11tncp816r?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D',
             '_blank'
         );
     };
 
     const handleMapLink2Click = () => {
         window.open(
-            'https://www.google.com/maps/place/POPULAR+AUTO+SPARE+PARTS+BRANCH-2/@25.2704401,55.3082351,14z/data=!4m7!3m6!1s0x3e5f434676b6f891:0x46fd216f5c4eb1!8m2!3d25.2701066!4d55.3052917!15sChhwb3B1bGFyIGF1dG8gc3BhcmUgcGFydHOSARBhdXRvX3BhcnRzX3N0b3Jl4AEA!16s%2Fg%2F11lv8xlsn1?entry=tts&g_ep=EgoyMDI0MTAxNi4wIPu8ASoASAFQAw%3D%3D',
+            'https://www.google.com/maps/place/Honour+Auto+Spare+Parts+Trading+Llc/@25.2711599,55.3108874,15z/data=!4m6!3m5!1s0x3e5f43fdd35810ab:0x1fc81395db33dd4d!8m2!3d25.2711599!4d55.3108874!16s%2Fg%2F11tncp816r?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D',
             '_blank'
         );
     };
@@ -44,7 +44,7 @@ const ContactBranch = () => {
                 <div className='HeadOfficeHeadText'>Branch 01</div>
 
                 <div className='HeadOfficeAddressCont'>
-                    <span className='HeadOfficeCompanyText'>Popular Auto Spart Parts Trading L.L.C</span> <br />
+                    <span className='HeadOfficeCompanyText'>Honour Auto Spare Parts Trading L.L.C</span> <br />
                     <p className='HeadOfficeAddressText'>
                         Shop No 10, Silver Front Building,
                     </p>
@@ -75,7 +75,7 @@ const ContactBranch = () => {
                 <div className='HeadOfficeHeadText'>Branch 02</div>
 
                 <div className='HeadOfficeAddressCont'>
-                    <span className='HeadOfficeCompanyText'>Popular Auto Spart Parts Trading L.L.C</span> <br />
+                    <span className='HeadOfficeCompanyText'>Honour Auto Spare Parts Trading L.L.C</span> <br />
                     <p className='HeadOfficeAddressText'>
                         Shop No 6, Near Evin Hotel,
                     </p>

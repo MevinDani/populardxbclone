@@ -27,6 +27,18 @@ const LeadingBrands = () => {
 
             <div className={`LeadingBrandsCont ${isLeadBrandVisible ? 'animate-from-left' : ''}`}>
 
+                <div className='LeadingMainBrands'>
+                    <div className='LeadingBrandMain logo13'>
+
+                    </div>
+                    <div className='LeadingBrandMain logo14'>
+
+                    </div>
+                    <div className='LeadingBrandMain logo15'>
+
+                    </div>
+                </div>
+
                 <div className='LeadingBrandItemCont'>
 
                     <div className='LeadingBrand logo1'>
@@ -59,21 +71,13 @@ const LeadingBrands = () => {
                     <div className='LeadingBrand logo10'>
 
                     </div>
-                    <div className='LeadingBrand logo11'>
+                    {/* <div className='LeadingBrand logo11'>
 
-                    </div>
+                    </div> */}
                     <div className='LeadingBrand logo12'>
 
                     </div>
-                    <div className='LeadingBrand logo13'>
 
-                    </div>
-                    <div className='LeadingBrand logo14'>
-
-                    </div>
-                    <div className='LeadingBrand logo15'>
-
-                    </div>
                 </div>
 
             </div>

@@ -18,6 +18,7 @@
 .LeadingBrandsCont {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 12px 0px;
@@ -25,12 +26,34 @@
     opacity: 0;
 }
 
+.LeadingMainBrands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .LeadingBrandItemCont {
     width: 85%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.LeadingBrandMain {
+    background-color: #ebe9e9;
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    transition: 0.3s ease-in;
+
+    margin: 4px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .LeadingBrand {
@@ -48,7 +71,8 @@
 
 }
 
-.LeadingBrand:hover {
+.LeadingBrand:hover,
+.LeadingBrandMain:hover {
     background-color: white;
     /* transform: scale(1.1); */
     box-shadow: 0 35px 100px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.4);
@@ -94,9 +118,9 @@
     background-image: url('../../../images/logo10.png');
 }
 
-.logo11 {
+/* .logo11 {
     background-image: url('../../../images/logo11.png');
-}
+} */
 
 .logo12 {
     background-image: url('../../../images/logo12.png');
