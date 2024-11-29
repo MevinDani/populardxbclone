@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './NavBar.css'
-import NavBarLogo from '../../images/FaithLogo.jpg'
+import NavBarLogo from '../../images/HonnerLogo.jpeg'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { VscListFlat } from "react-icons/vsc";
 import { IoMdClose } from 'react-icons/io';
