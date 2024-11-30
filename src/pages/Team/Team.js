@@ -2,6 +2,7 @@ import React from 'react'
 import TeamMainBanner from '../../components/Team/TeamMainBanner/TeamMainBanner'
 import Footer from '../../components/Footer/Footer'
 import TeamCard from '../../components/Team/TeamCard/TeamCard'
+import SubPagesBanner from '../../components/SubPagesBanner/SubPagesBanner'
 
 const Team = () => {
     return (
@@ -9,7 +10,10 @@ const Team = () => {
 
             {/* teamMainBanner */}
             <div>
-                <TeamMainBanner />
+                {/* <TeamMainBanner /> */}
+                <SubPagesBanner main={'Our Team'}
+                    desc={' Meet the people who make Honour Auto Spare Parts great. Our team is skilled, friendly, and ready to help you with anything you need.'}
+                />
             </div>
 
             {/* TeamCard */}

@@ -5,6 +5,7 @@ import HeadOffice from '../../components/Contact/HeadOffice/HeadOffice'
 import ContactMap from '../../components/Contact/ContactMap/ContactMap'
 import ContactBranch from '../../components/Contact/ContactBranch/ContactBranch'
 import ContactForm from '../../components/Contact/ContactForm/ContactForm'
+import SubPagesBanner from '../../components/SubPagesBanner/SubPagesBanner'
 
 const Contact = () => {
     return (
@@ -12,7 +13,10 @@ const Contact = () => {
 
             {/* teamMainBanner */}
             <div style={{ marginBottom: '32px' }}>
-                <ContactMainBanner />
+                {/* <ContactMainBanner /> */}
+                <SubPagesBanner main={'Contact Us'}
+                    desc={'  Get in touch with us for your spare parts needs. We have several locations in Dubai and are always here to help.'}
+                />
             </div>
 
             {/* HeadOffice */}

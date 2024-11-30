@@ -4,15 +4,40 @@
     align-items: center;
     background-color: #ffffff;
     padding: 22px 0px;
+
+    /* background-image: url('../../../images/bannerBg.webp'); */
+    background-image: url('../../../images/gaffiti.avif');
+    /* background-image: url('../../../images/HomeBanner2.jpeg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #000000;
+
+    position: relative;
+}
+
+.LeadingBrandsWrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    z-index: 1;
+    /* Places it beneath the text */
 }
 
 .LeadingBrandsHeaderText {
     display: flex;
     justify-content: center;
-    color: black;
+    color: white;
     font-size: 30px;
     font-weight: 600;
     padding: 12px 0px;
+    z-index: 2;
 }
 
 .LeadingBrandsCont {
@@ -22,6 +47,7 @@
     justify-content: center;
     align-items: center;
     padding: 12px 0px;
+    z-index: 2;
 
     opacity: 0;
 }

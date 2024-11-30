@@ -6,6 +6,7 @@ import ExtensiveRange from '../../components/About/AboutExtensiveRange/Extensive
 import Mission from '../../components/About/AboutMission/Mission';
 import Vision from '../../components/About/AboutVision/Vision';
 import Footer from '../../components/Footer/Footer';
+import SubPagesBanner from '../../components/SubPagesBanner/SubPagesBanner';
 
 const About = () => {
 
@@ -13,14 +14,16 @@ const About = () => {
         <div className='HomePageWrap'>
 
             {/* AboutMainBanner */}
-            <AboutMainBanner />
+            {/* <AboutMainBanner /> */}
+            <SubPagesBanner main={'About Us'} desc={'Since 1998, we’ve been providing reliable car spare parts. We focus on high quality and always put our customers first.'} />
 
             {/* AboutTrust */}
             <AboutTrust />
 
             {/* AboutEnhance */}
-            <AboutEnhance />
-
+            <div style={{ margin: '12px 0px' }}>
+                <AboutEnhance />
+            </div>
             {/* AboutExtRange */}
             <ExtensiveRange />
 

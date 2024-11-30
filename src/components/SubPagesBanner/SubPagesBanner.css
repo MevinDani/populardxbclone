@@ -1,0 +1,49 @@
+.SubPagesBannerWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-image: url('../../../images/bannerBg.webp'); */
+    background-image: url('../../images/FaithHomeBanner.jpeg');
+    /* background-image: url('../../../images/HomeBanner2.jpeg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 400px;
+
+    background-color: #000000;
+
+    position: relative;
+    /* opacity: 0.95; */
+}
+
+.SubPagesBannerWrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    z-index: 1;
+    /* Places it beneath the text */
+}
+
+.SubPagesMainText {
+    z-index: 2;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.SubPagesDescText {
+    z-index: 2;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}

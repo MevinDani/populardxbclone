@@ -8,11 +8,36 @@
 
     height: 360px;
 
+    /* background-image: url('../../../images/bannerBg.webp'); */
+    background-image: url('../../../images/gaffiti.avif');
+    /* background-image: url('../../../images/HomeBanner2.jpeg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #000000;
+
+    position: relative;
+
+}
+
+.AboutEnhanceWrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black overlay */
+    z-index: 2;
+    /* Places it beneath the text */
 }
 
 .AboutEnhanceLeft,
 .AboutEnhanceRightText {
-    color: black;
+    color: white;
+    z-index: 2;
 }
 
 @media (max-width:1130px) {

@@ -46,6 +46,7 @@
     /* Smooth zoom-in transition */
     transform-style: preserve-3d;
     perspective: 1000px;
+    transform-origin: center;
 }
 
 .ProductCatItem:hover {
@@ -55,6 +56,11 @@
 
     transform: scale(1.1);
     z-index: 5;
+}
+
+.ProductCatItem:hover {
+    transform: rotateY(360deg);
+    /* Rotate around the Y-axis */
 }
 
 .ProductCatItem:hover::before {
@@ -67,6 +73,11 @@
     /* Ensures the text is above the overlay */
     color: white;
     z-index: 2;
+
+    text-align: center;
+    transform: translateZ(20px);
+    /* Slightly elevate the text */
+    font-weight: bold;
 }
 
 .SuspensionPart {

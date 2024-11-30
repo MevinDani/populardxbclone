@@ -7,7 +7,24 @@ const ProductCategory = ({ page }) => {
 
     const [isProdCatVisible, setIsProdCatVisible] = useState(false);
 
-    const handleMouseMove = (e, cardRef) => {
+    const [rotation, setRotation] = useState({ x: 0, y: 0 });
+
+    const handleMouseMove = (e, element) => {
+        const rect = element.getBoundingClientRect();
+        const x = e.clientX - rect.left; // Mouse X relative to the element
+        const y = e.clientY - rect.top;  // Mouse Y relative to the element
+
+        const xPercent = (x / rect.width - 0.5) * 360; // Convert to a percentage
+        const yPercent = (y / rect.height - 0.5) * 360;
+
+        setRotation({ x: yPercent, y: -xPercent });
+    };
+
+    const handleMouseLeave = () => {
+        setRotation({ x: 0, y: 0 });
+    };
+
+    const handleMouseMoveA = (e, cardRef) => {
         const rect = cardRef.getBoundingClientRect();
 
         // Calculate the position of the mouse relative to the center of the card
@@ -22,7 +39,7 @@ const ProductCategory = ({ page }) => {
         cardRef.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
     };
 
-    const handleMouseLeave = (cardRef) => {
+    const handleMouseLeaveA = (cardRef) => {
         // Reset the transform when the mouse leaves
         cardRef.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
     };
@@ -58,6 +75,7 @@ const ProductCategory = ({ page }) => {
                 <div className='ProductCatItem SuspensionPart'
                     onMouseMove={(e) => handleMouseMove(e, e.currentTarget)}
                     onMouseLeave={(e) => handleMouseLeave(e.currentTarget)}
+
                 >
                     <p className='ProductItemText'>
                         Suspension <br />
