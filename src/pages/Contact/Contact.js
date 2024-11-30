@@ -30,9 +30,9 @@ const Contact = () => {
             </div>
 
             {/* Branches */}
-            <div style={{ marginBottom: '32px' }}>
+            {/* <div style={{ marginBottom: '32px' }}>
                 <ContactBranch />
-            </div>
+            </div> */}
 
             {/* ContactForm */}
             <div style={{ marginBottom: '32px' }}>

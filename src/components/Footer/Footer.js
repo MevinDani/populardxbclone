@@ -42,7 +42,7 @@ const Footer = () => {
                     <div className='FooterAddressCont'>
                         <CiMail className='FooterAddressIcon' />
                         <div className='FooterContDescText'>
-                            info@populardxb.com
+                            honour22@eim.ae
                         </div>
                     </div>
                     <div className='FooterAddressCont'>

@@ -21,7 +21,7 @@ const MainBanner = () => {
 
                 <div className={`MainBannerLeftCont  ${isVisible ? 'animate-slide-up' : ''}`}>
 
-                    <div className='MainBannerSmallText'>Popular Auto Spare Parts L.L.C</div>
+                    <div className='MainBannerSmallText'>Honour Auto Spare Parts L.L.C</div>
 
                     <div className='MainBannerBigText'>
                         Your Reliable Partner for <br />

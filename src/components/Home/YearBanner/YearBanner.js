@@ -41,7 +41,7 @@ const YearBanner = () => {
                 </div>
 
                 <div className='YearBannerRightMidText'>
-                    Welcome to Popular Auto Spare Parts, a distinguished name in <br />
+                    Welcome to Honour Auto Spare Parts, a distinguished name in <br />
                     Dubai’s automotive spare parts sector. For over two decades, we have <br />
                     delivered exceptional quality and reliability, earning trust globally for <br />
                     our extensive range of spare parts and dedicated customer service.

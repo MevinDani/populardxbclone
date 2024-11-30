@@ -29,7 +29,7 @@ const AboutTrust = () => {
 
                 <div className='YearBannerRightMidText'>
                     Founded on May 1st, 1998, in the bustling heart of Nasser Square, <br />
-                    Dubai, Popular Auto Spare Parts has become a global leader in <br />
+                    Dubai, Honuor Auto Spare Parts has become a global leader in <br />
                     supplying high-quality spare parts. Over the decades, we’ve built <br />
                     a reputation for excellence, driven by the passion and expertise <br />
                     of Mr. Mohammed Haneefa, Mr. Syed Abdullah, and Mr. Haris <br />

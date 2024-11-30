@@ -38,7 +38,7 @@ const HistoryBanner = () => {
                     from Asia and Europe in the aftermarket industry. <br />
                     Our commitment to excellence has allowed us to <br />
                     establish several branches under the renowned <br />
-                    Popular Group , catering to diverse car models and <br />
+                    Honour Group , catering to diverse car models and <br />
                     brands.
                 </div>
             </div>

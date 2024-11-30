@@ -28,13 +28,13 @@ const ExtensiveRange = () => {
                 <div className='ExtRangeLeftCont'>
 
 
-                    <IoDiamondOutline className='ExtRangeDiamond'/>
+                    <IoDiamondOutline className='ExtRangeDiamond' />
 
 
                     <div className='ExtRangeLeftHeadText'>Extensive Product Range</div>
 
                     <div className='ExtRangeLeftDescText'>
-                        At Popular Auto Spare Parts, we are guided by a set of <br />
+                        At Honuor Auto Spare Parts, we are guided by a set of <br />
                         core values that define our culture and drive our <br />
                         actions. These values form the foundation of our <br />
                         operations & are instrumental in building lasting <br />
