@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './LeadingBrands.css'
 import { useInView } from 'react-intersection-observer';
+import { FaStar } from "react-icons/fa";
 
 
 
@@ -8,10 +9,12 @@ const LeadingBrands = () => {
 
     const [isLeadBrandVisible, setIsLeadBrandVisible] = useState(false);
 
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
 
     const { ref: LeadBrandRef, inView: LeadBrandInView } = useInView({
         triggerOnce: true,  // Trigger animation once when the element comes into view
-        threshold: 0.5,  // Trigger when 50% of the element is in view
+        threshold: screenWidth < 410 ? 0.2 : 0.5,   // Trigger when 50% of the element is in view
     });
 
     useEffect(() => {
@@ -19,6 +22,14 @@ const LeadingBrands = () => {
             setIsLeadBrandVisible(true)
         }
     }, [LeadBrandInView])
+
+    // Update screen width on window resize
+    useEffect(() => {
+        const handleResize = () => setScreenWidth(window.innerWidth);
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <div className='LeadingBrandsWrap' ref={LeadBrandRef}>
@@ -30,12 +41,19 @@ const LeadingBrands = () => {
                 <div className='LeadingMainBrands'>
                     <div className='LeadingBrandMain logo13'>
 
+                        <div className='top-left-icon'>
+                            <FaStar />
+                        </div>
                     </div>
                     <div className='LeadingBrandMain logo14'>
-
+                        <div className='top-left-icon'>
+                            <FaStar />
+                        </div>
                     </div>
                     <div className='LeadingBrandMain logo15'>
-
+                        <div className='top-left-icon'>
+                            <FaStar />
+                        </div>
                     </div>
                 </div>
 

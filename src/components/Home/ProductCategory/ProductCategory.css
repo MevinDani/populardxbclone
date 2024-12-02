@@ -21,14 +21,15 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 12px;
 }
 
 .ProductCatItem {
     /* width: 250px; */
-    flex: 0 1 calc(20% - 8px);
-    height: 380px;
+    /* flex: 0 1 calc(20% - 8px); */
+    width: 26%;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -62,12 +62,14 @@ const ProductCategory = ({ page }) => {
     return (
         <div className='ProductCategoryWrap' ref={prodCatRef}
             style={{
-                backgroundColor: page ? '#f7f7f7' : '#ed1e24',
+                // backgroundColor: page ? '#f7f7f7' : '#ed1e24',
+                backgroundColor: page ? 'white' : '#f7f7f7',
             }}
         >
 
             <div className='ProductCategoyHeaderText' style={{
-                color: page ? 'black' : 'white',
+                // color: page ? 'black' : 'white',
+                color: page ? 'black' : 'black',
             }}>Product Categories</div>
 
             <div className={`ProductCategoryCont ${isProdCatVisible ? 'animate-slide-up' : ''}`}>
